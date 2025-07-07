@@ -1,0 +1,15 @@
+<h2>Premium Calculator</h2>
+<form method="post">
+  Insurance Type:
+  <select name="insurance_type">
+    <option value="health">Health</option>
+    <option value="car">Car</option>
+    <option value="bike">Bike</option>
+  </select><br>
+  Age: <input name="age"><br>
+  <input type="submit" value="Calculate">
+</form>
+{% if premium %}
+  <h3>Your Premium: ₹{{ premium }}</h3>
+{% endif %}
+<a href="/">Back</a>
